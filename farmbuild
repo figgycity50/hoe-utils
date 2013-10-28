@@ -1,0 +1,20 @@
+tArgs = {...}
+
+for i = 0, tArgs[1] do
+	for i = 0, tArgs[1] do
+		turtle.forward()
+		turtle.digDown()
+	end
+	for i = 0, tArgs[1] do
+		turtle.back()
+	end
+	turtle.turnRight()
+	turtle.forward()
+	turtle.turnLeft()
+end
+
+turtle.turnLeft()
+for i = 0, tArgs[1] do
+turtle.forward()
+end
+turtle.turnRight()
